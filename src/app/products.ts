@@ -5,6 +5,7 @@ export const products = [
     price: 1000,
     currency: 'euro',
     description: 'consola de jocuri foarte buna',
+    picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-ps4.png',  
     vanzator: 'Theodor',
   },
   {
@@ -13,6 +14,7 @@ export const products = [
     price: 699,
     currency: 'euro',
     description: 'A great phone with one of the best cameras',
+    picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-phone-mini.png',
     vanzator: 'Tati',
   },
   {
@@ -21,6 +23,7 @@ export const products = [
     price:  20.99,
     currency: 'euro',
     description: 'este cel mai bun telefon',
+    picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-ps4.png',
     vanzator: 'Astrid',
   },
   {
@@ -29,6 +32,7 @@ export const products = [
     price: 300.99,
     currency: 'euro',
     description: 'ie o consola de jocuri video',  
+    picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-nintendo.png',
     vanzator: 'Theodor' ,
   },
   {
@@ -36,6 +40,7 @@ export const products = [
     name: 'catan' ,
     price: 20,
     description: 'este un joc in care trebuie sa te extinzi' ,
+    picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-catan.png',
   },
   {
     id: 5,
@@ -43,6 +48,7 @@ export const products = [
     price: 50.99,
     currency: 'euro',
     description: 'joc cu caramizi' ,
+    picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-lego-city.png',
     vanzator: 'Theodor' ,
   }
 ] 

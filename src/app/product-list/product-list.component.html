@@ -1,31 +1,39 @@
-<h2>Produse</h2>
-<div *ngFor="let product of products; index as productId">
-
-  <h3>
-      <a [title]="product.name" [routerLink]="['/products', productId]">
-      {{ product.name }}
-      </a>
-  </h3>
-
-  <img src="https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/Theo.png" />
-  <div class="item-image">
-  <i class="fa fa-picture-o fa-6"></i>
-  
-</div>
-
-  <p style="color: blue;" *ngIf="product.description"> Descrieres: {{ product.description }}</p>
-  <p style="color: red;"> Pret: {{ product.price }}</p>
-  <p style="color: black;">vanzator: {{ product.vanzator }}</p>
-  
-  <button (click)="share()">Share</button>
-  <app-product-alerts 
-    [product] = "product" 
-    (notify)="onNotify()">>
-  </app-product-alerts>
-
-  <button (click)="addToCart(product)">Buy</button>
-
-</div>
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+      <button class="btn btn-success" (click)="getNavigation('create', '')">Create New Product</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+      <table #productsTable class="table table-bordered table-hover" style="width:100%">
+        <thead>
+        <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Picture</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of products; let i =index;">
+          <td>{{i + 1}}</td>
+          <td><img [src]="product.picture" /></td>
+          <td>{{product.name}}</td>
+          <td>{{product.description}}</td>
+          <td>$ {{product.price}}</td>
+          <td>
+            <button type="button" class="btn btn-success" (click)="getNavigation('view', product.p_id)">View</button>
+            <button type="button" class="btn btn-warning" (click)="getNavigation('update', product.p_id)">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
