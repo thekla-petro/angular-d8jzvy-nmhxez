@@ -39,6 +39,7 @@ export const products = [
     id: 4,
     name: 'catan' ,
     price: 20,
+    currency: 'euro',
     description: 'este un joc in care trebuie sa te extinzi' ,
     picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-catan.png',
   },
@@ -49,7 +50,16 @@ export const products = [
     currency: 'euro',
     description: 'joc cu caramizi' ,
     picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-lego-city.png',
-    vanzator: 'Theodor' ,
+    vanzator: 'Theodor'
+  },
+  {
+    id: 6,
+    name: 'POKEMON cards',
+    price: 5.99,
+    currency: 'euro',
+    description: 'sunt niste carduri pentru joc,colectie',
+    picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-lego-city.png',
+    vanzator: 'Theodor' 
   }
 ] 
 

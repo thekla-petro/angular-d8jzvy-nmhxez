@@ -10,8 +10,8 @@
         <thead>
         <tr>
         <th>#</th>
-        <th>Name</th>
         <th>Picture</th>
+        <th>Name</th>
         <th>Description</th>
         <th>Price</th>
         <th>Action</th>
@@ -21,9 +21,9 @@
         <tr *ngFor="let product of products; let i =index;">
           <td>{{i + 1}}</td>
           <td><img [src]="product.picture" /></td>
-          <td>{{product.name}}</td>
+          <td><a [title]="product.name" [routerLink]="['/products', productId]">{{product.name}}</a></td>
           <td>{{product.description}}</td>
-          <td>$ {{product.price}}</td>
+          <td>{{product.price}}</td>
           <td>
             <button type="button" class="btn btn-success" (click)="getNavigation('view', product.p_id)">View</button>
             <button type="button" class="btn btn-warning" (click)="getNavigation('update', product.p_id)">Edit</button>
