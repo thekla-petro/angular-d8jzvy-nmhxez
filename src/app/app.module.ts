@@ -13,6 +13,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { CustomCurrencyPipe } from './custom-currency.pipe';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    LeftBarComponent
+    LeftBarComponent,
+    CustomCurrencyPipe
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]

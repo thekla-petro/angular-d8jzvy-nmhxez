@@ -2,7 +2,7 @@ export const products = [
   {
     id: 0,
     name: 'ps4',
-    price: 1000,
+    price: 85.25,
     currency: 'euro',
     description: 'consola de jocuri foarte buna',
     picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-ps4.png',  
