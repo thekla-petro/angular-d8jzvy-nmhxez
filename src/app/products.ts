@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 0,
+    productId: 0,
     name: 'ps4',
     price: 85.25,
     currency: 'euro',
@@ -9,7 +9,7 @@ export const products = [
     vanzator: 'Theodor',
   },
   {
-    id: 1,
+    productId: 1,
     name: 'Phone Mini',
     price: 699,
     currency: 'euro',
@@ -18,7 +18,7 @@ export const products = [
     vanzator: 'Tati',
   },
   {
-    id: 2,
+    productId: 2,
     name: 'Phone Standard',
     price:  20.99,
     currency: 'euro',
@@ -27,7 +27,7 @@ export const products = [
     vanzator: 'Astrid',
   },
   {
-    id: 3,
+    productId: 3,
     name:`Nintendo`,
     price: 300.99,
     currency: 'euro',
@@ -36,7 +36,7 @@ export const products = [
     vanzator: 'Theodor' ,
   },
   {
-    id: 4,
+    productId: 4,
     name: 'catan' ,
     price: 20,
     currency: 'euro',
@@ -44,7 +44,7 @@ export const products = [
     picture: 'https://raw.githubusercontent.com/thekla-petro/angular-d8jzvy-nmhxez/master/src/assets/Images/mini-catan.png',
   },
   {
-    id: 5,
+    productId: 5,
     name: 'Lego city' ,
     price: 50.99,
     currency: 'euro',
@@ -53,7 +53,7 @@ export const products = [
     vanzator: 'Theodor'
   },
   {
-    id: 6,
+    productId: 6,
     name: 'POKEMON cards',
     price: 5.99,
     currency: 'euro',
