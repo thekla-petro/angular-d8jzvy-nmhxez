@@ -21,27 +21,18 @@
     <mat-toolbar color="primary">
       <mat-toolbar-row>    
         <button 
-          mat-icon-button>
+          mat-icon-button
+          aria-label="Toggle sidenav"
+          *ngIf="(isHandset | async)!.matches">>
           <mat-icon (click)="drawer.toggle()">menu</mat-icon>
         </button>
         <h1>Happy Dad Store</h1>
+        <span class="spacer"></span>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>  
       </mat-toolbar-row>
     </mat-toolbar>
-    <div class="basic-container">
-      <router-outlet></router-outlet>
-    </div>
+    <ng-content></ng-content>
 </mat-sidenav-content>
 </mat-sidenav-container>
-
-
-<!--
-  <div class="col-lg-3">
-
-    <div class="list-group">
-      <a href="#" class="list-group-item">Category 1</a>
-      <a href="#" class="list-group-item">Category 2</a>
-      <a href="#" class="list-group-item">Category 3</a>
-    </div>
-
-  </div>
--->

@@ -1,12 +1,27 @@
 .sidenav-container {
+  height: 100%;
+  /*
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: #eee;
+  */
 }
 
-.basic-container {
-  padding: 30px;
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgb(0, 0, 0, 0.24);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar-row a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
 }
